@@ -1,0 +1,17 @@
+// HelloWorld.cpp : Defines the entry point for the console application.
+//Fecha: 10/02/2015
+//Alumno: Erwin Ferreyra Montaño
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main()
+{
+	cout<<"Hello World!! <3 \n\n";
+	cout<<"Bolivianos el hado propicio\n\n";
+	getch();
+	return 0;
+}
