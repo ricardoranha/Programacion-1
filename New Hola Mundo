@@ -1,0 +1,20 @@
+// New Hello World.cpp : Defines the entry point for the console application.
+//Fecha: 24/02/2015
+//Alumno: Erwin Ferreyra Montaño
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main()
+{
+	int edad;
+	cout<<"Ingresa tu edad: ";
+	cin>> edad ;
+	cout<< "Tu edad es: ";
+	cout<< edad ;
+	getch();
+	return 0;
+}
