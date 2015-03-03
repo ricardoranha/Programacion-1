@@ -1,9 +1,13 @@
+// Operaciones.cpp : Defines the entry point for the console application.
 //Nombre: Erwin Ferreyra Montaño
 //Fecha:03/03/15
 
 #include<stdio.h>
+#include"stdafx.h"
+#include"conio.h"
+using namespace std;
 
-int main()
+int main() 
 {
 	float a;
 	float b;
@@ -11,7 +15,6 @@ int main()
 	float d;
 	float e;
 	float f;
-	float g;
 	printf("Ingrese el primer numero:\n");
 	scanf("%f",&a);
 	printf("Ingrese el segundo numero:\n");
@@ -20,11 +23,9 @@ int main()
 	d = a-b;
 	e = a*b;
 	f = a/b;
-	g = a%b;
 	printf("La suma es: %f\n",c);
 	printf("La resta es: %f\n",d);
 	printf("El producto es: %f\n",e);
 	printf("El cociente es: %f\n",f);
-	printf("El modulo es: %f\n",g);
 	return 0;
 }
