@@ -1,0 +1,25 @@
+//Nombre: Erwin Ferreyra Montaño
+//Fecha:03/03/15
+
+Proceso Operaciones
+	
+	Escribir "Ingrese el primer numero:"
+    Leer A
+	
+    Escribir "Ingrese el segundo numero:"
+    Leer B
+	
+	C <- A+B
+	D <- A-B
+	E <- A*B
+	F <- A/B
+	G <- A%B
+	
+	Escribir "La suma es: ",C
+	Escribir "La resta es: ",D
+	Escribir "El producto es: ",E
+	Escribir "El cociente es: ",F
+	Escribir "El modulo es: ",G
+	
+	
+FinProceso
