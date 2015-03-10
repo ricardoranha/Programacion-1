@@ -4,3 +4,26 @@ Proceso Calculo_del_area_del_cuadrado
 	A<-L*L
 	Escribir "El valor del area es:",A
 FinProceso
+
+
+// Cuadrado.cpp : Defines the entry point for the console application.
+//Nombre: Erwin Ferreyra Montaño
+//Fecha:10/03/15
+
+#include"stdafx.h"
+#include"conio.h"
+#include <iostream>
+using namespace std;
+
+int main() {
+	float a;
+	float l1;
+	float l2;
+	cout << "Ingrese el valor del lado 1" << endl;
+	cin >> l1;
+	cout << "Ingrese el valor del lado 2" << endl;
+	cin >> l2;
+	a = l1*l2;
+	cout << "El valor del area es:" << a << endl;
+	return 0;
+}
