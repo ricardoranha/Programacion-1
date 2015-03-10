@@ -1,0 +1,7 @@
+Proceso Impuesto
+	Escribir "Ingrese el valor de venta"
+	Leer X
+	I<-X*0.13
+	Escribir "El valor del IVA es:",I
+	
+FinProceso
