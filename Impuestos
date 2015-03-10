@@ -5,3 +5,25 @@ Proceso Impuesto
 	Escribir "El valor del IVA es:",I
 	
 FinProceso
+
+
+C++
+// IVA.cpp : Defines the entry point for the console application.
+//Nombre: Erwin Ferreyra Montaño
+//Fecha:10/03/15
+
+#include"stdafx.h"
+#include"conio.h"
+#include <iostream>
+using namespace std;
+
+int main() {
+	float i;
+	float x;
+	cout << "Ingrese el valor de venta" << endl;
+	cin >> x;
+	i = x*0.13;
+	cout << "El valor del IVA es:" << i << endl;
+	return 0;
+}
+
