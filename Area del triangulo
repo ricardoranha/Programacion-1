@@ -6,3 +6,25 @@ Proceso Calculo_del_area_del_triangulo
 	A<-((B*H)/2)
 	Escribir "El valor del area es:",A
 FinProceso
+
+// Triangulo.cpp : Defines the entry point for the console application.
+//Nombre: Erwin Ferreyra Montaño
+//Fecha:10/03/15
+
+#include"stdafx.h"
+#include"conio.h"
+#include <iostream>
+using namespace std;
+
+int main() {
+	float a;
+	float b;
+	float h;
+	cout << "Ingrese el valor de la base" << endl;
+	cin >> b;
+	cout << "Ingrese el valor de la altura" << endl;
+	cin >> h;
+	a = ((b*h)/2);
+	cout << "El valor del area es:" << a << endl;
+	return 0;
+}
