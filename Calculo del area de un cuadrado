@@ -1,0 +1,6 @@
+Proceso Calculo_del_area_del_cuadrado
+	Escribir "Ingrese el valor de los lados"
+	Leer L
+	A<-L*L
+	Escribir "El valor del area es:",A
+FinProceso
