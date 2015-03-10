@@ -1,0 +1,8 @@
+Proceso Calculo_del_area_del_triangulo
+	Escribir "Ingrese el valor de la base"
+	Leer B
+	Escribir "Ingrese el valor de la altura"
+	Leer H
+	A<-(B*A)/2
+	Escribir "El valor del area es:",A
+FinProceso
