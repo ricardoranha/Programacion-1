@@ -1,0 +1,53 @@
+PSeInt
+
+Proceso calculo_jornal
+	Escribir "Ingrese 1 si el personal es ingeniero o 0 si es tecnico"
+	Leer t
+	Si t=1 Entonces
+		Escribir "Ingrese el numero de horas trabajadas"
+		Leer h
+		j<-25*h
+		Escribir "El total del jornal del ingeniero es:",j
+	Sino
+		Escribir "Ingrese el numero de horas trabajadas"
+		Leer h
+		k<-5*h
+		Escribir "El total del jornal del tecnico es:",k
+	Fin Si
+	
+FinProceso
+
+C++
+// Operaciones.cpp : Defines the entry point for the console application.
+//Nombre: Erwin Ferreyra Montaño
+//Fecha:13/03/15
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+
+using namespace std;
+
+int main()
+{ float h, j, k, t;
+cout<< "Ingrese 1 si el personal es ingeniero o 0 si es tecnico";
+cin>> t;
+if (t==1)
+{
+	cout<< "Ingrese el numero de horas trabajadas";
+	cin>> h;
+	j=25*h;
+	cout<< "El total del jornal del ingeniero es:"<<j;
+}
+else
+{
+	cout<< "Ingrese el numero de horas trabajadas";
+	cin>> h;
+	k=5*h;
+	cout<< "El total del jornal del tecnico es:"<<k;
+}
+getch();
+return 0;
+
+}
