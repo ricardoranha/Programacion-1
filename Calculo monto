@@ -1,0 +1,40 @@
+PSeInt
+
+Proceso calculo_porcentaje
+Escribir "Ingrese el monto:";
+Leer A;
+Si A > 20000 Entonces
+B<-A*2/100
+Sino
+B<-A*1/100
+Fin Si
+Escribir "El porcentaje es:",B;
+P<-A+B
+Escribir "El monto a pagar es:",P;
+FinProceso
+
+C++
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+int main ()
+{int A,B,P;
+cout<<"Ingrese el monto: ";
+cin>> A;
+if (A > 20000)
+{  B = A*2/100;
+}
+else
+{  B = A*1/100;
+}
+
+P = A + B;
+
+cout<<"El monto a pagar es: "<< P;
+
+getch();
+return 0;
+}
