@@ -1,0 +1,57 @@
+-PSeInt
+Proceso calculodenotas
+	Escribir "Escriba la cantidad de alumnos"
+	Leer N
+	Para I<-1 Hasta N Con Paso 1 Hacer
+		Escribir "Ingrese la nota practica"
+		Leer NP
+		NP<-NP*0.20
+		Escribir "Ingrese la nota de los tres parciales"
+		Leer P1
+		Leer P2
+		Leer P3
+		TP<-((P1+P2+P3)/3)*0.40
+		Escribir "Ingrese la nota del examen final"
+		Leer EF
+		EF<-EF*0.40
+		NF<-NP+TP+EF
+		Escribir "La nota final del alumno es:",NF
+		
+	Fin Para
+	
+FinProceso
+
+-C++
+// Calculo de la nota final.cpp : Defines the entry point for the console application.
+//Erwin Ferreyra Montaño
+//24/03/2015
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{
+float ef, i, n, nf, np, p1, p2, p3, tp;
+	cout << "Escriba la cantidad de alumnos";
+	cin >> n;
+	for (i=1;i<=n;i++) 
+	{
+		cout << "Ingrese la nota practica";
+		cin >> np;
+		np = np*0.20;
+		cout << "Ingrese la nota de los tres parciales";
+		cin >> p1;
+		cin >> p2;
+		cin >> p3;
+		tp = ((p1+p2+p3)/3)*0.40;
+		cout << "Ingrese la nota del examen final";
+		cin >> ef;
+		ef = ef*0.40;
+		nf = np+tp+ef;
+		cout << "La nota final del alumno es:" << nf;
+	}
+	getch ();
+}
