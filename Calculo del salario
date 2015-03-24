@@ -1,0 +1,47 @@
+-PSeInt
+Proceso calculodesalario
+	Escribir "Escriba la cantidad de empleados"
+	Leer N
+	Para I<-1 Hasta N Con Paso 1 Hacer
+		Escribir "Ingrese el salario por hora"
+		Leer SH
+		Escribir "Ingrese las horas trabajadas"
+		Leer HT
+		SB<-SH*HT
+		Escribir "El salario bruto es:", SB
+		SN<-SB-(SB*0.13)
+		Escribir "El salario neto es:", SN
+	Fin Para
+	
+FinProceso
+
+C++
+// Calculo del salario.cpp : Defines the entry point for the console application.
+//Erwin Ferreyra Montaño
+//24/03/2015
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+{float N, SH, HT, SB, SN, I;
+cout<<"Digite la cantidad de trabajadores \n";
+cin>>N;
+for(I=1;I<=N;I++)
+	{
+		cout <<"Ingrese el salario por hora \n";
+		cin >>SH;
+		cout <<"Ingrese las horas trabajadas \n";
+		cin >>HT;
+		SB=SH*HT;
+		cout <<"El salario bruto es: \n"<<SB;
+		SN=SB-(SB*0.13);
+		cout <<"El salario neto es: \n"<<SN;
+	}
+getch();
+
+}
+
