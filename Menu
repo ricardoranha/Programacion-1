@@ -1,0 +1,65 @@
+// Menu.cpp : Defines the entry point for the console application.
+//Erwin Ferreyra Montaño
+//31/03/2015
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h"
+
+using namespace std;
+
+void main()
+{float a, b, r, ef, nf, p1, p2, p3, tp, np, sh, ht, sb, sn; int opcion;
+do{
+	cout<<"MENU \t\n";
+    cout<<"==== \t\n";
+	cout<<"1.- Calculo del area de un cuadrado \n";
+	cout<<"2.- Calculo de la nota final\n";
+	cout<<"3.- Calculo del salario\n";
+	cout<<"4.- Calculo del area de un triangulo\n";
+	      cout<<"0.- Salir\n";
+    cout<<"Elige una opcion\n";
+	cin>>opcion;
+	switch(opcion){
+	case 1: cout<<"Ingrese el valor de los dos lados:";
+            cin>>a;
+            cin>>b;
+			r=a*b;
+			cout<<"El area del cuadrado es:"<<r;break;
+	case 2: cout<<"Ingrese la nota de los 3 parciales:";
+            cin>>p1;
+            cin>>p2;
+			cin>>p3;
+			tp=((p1+p2+p3)/3)*0.40;
+			cout<<"Ingrese la nota practica:";
+			cin>>np;
+			np=np*0.20;
+			cout<<"Ingrese la nota del examen final:";
+			cin>>ef;
+			ef=ef*0.40;
+			nf=np+tp+ef;
+			cout<<"La nota final es:"<<nf;break;
+	case 3: cout<<"Ingrese el salario por hora:";
+		    cin>>sh;
+			cout<<"Ingrese las horas trabajadas:";
+			cin>>ht;
+			sb=sh*ht;
+			cout<<"El salario bruto es:"<<sb;
+			sn=sb*0.13;
+			cout<<"El salario neto es:"<<sn;break;
+	case 4: cout<<"Ingrese el valor de la base del triangulo:";
+		    cin>>a;
+			cout<<"Ingrese la altura del triangulo:";
+			cin>>b;
+			r=((a*b)/2);
+			cout<<"El area del triangulo es:"<<r;break;
+	case 0: cout<<"Salir\n";break;
+	default: cout<<"Opcion invalida\n";
+	}
+	getch ();
+	system ("cls");
+}while (opcion!=0);
+getch ();
+}
+
