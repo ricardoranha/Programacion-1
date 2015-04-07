@@ -1,0 +1,31 @@
+// Promedio.cpp : Defines the entry point for the console application.
+//Erwin Ferreyra Montaño
+//07/05/2015
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h"
+
+using namespace std;
+
+void main()
+{int c, salario, p; float s;
+s=0;
+c=0;
+cout<<"Ingrese el monto del salario mensual:"<<endl;
+cin>>salario;
+while (salario!=0)
+{
+	s=s+salario;
+	c=c+1;
+	cout<<"Ingrese el siguiente salario o 0 si desea calcular el promedio:"<<endl;
+	cin>>salario;
+}
+p=s/c;
+cout<<"La cantidad de salarios ingresados son:"<<c<<endl;
+cout<<"El monto total es igual:"<<s<<endl;
+cout<<"El promedio es:"<<p<<endl;
+	getch ();
+}
+
