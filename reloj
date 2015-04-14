@@ -1,0 +1,19 @@
+// Reloj digital.cpp : Defines the entry point for the console application.
+//Erwin Ferreyra Montaño
+//15/05/2015
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h"
+
+using namespace std;
+
+void main()
+{
+	int h, m, s, i, n;
+	for (h=0;h<24;h++)
+		for(m=0;m<60;m++)
+			for(s=0;s<60;s++)
+				cout << "\r" << h << m << h;
+	getch ();
+}
