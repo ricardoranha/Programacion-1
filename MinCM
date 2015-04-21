@@ -1,0 +1,41 @@
+// MCD.cpp : Defines the entry point for the console application.
+//Erwin Ferreyra Montaño
+//22/05/2015
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h"
+
+using namespace std;
+
+void main()
+{ int x, y, i=2, n=1, a, b;
+	cout<<" Ingrese dos Numeros"<<endl;
+	cin>>a;
+	cin>>b;
+	if (a<b)
+	{	x=a;
+		y=b;
+	}
+	else
+	{	x=b;
+		y=a;
+	}
+	do {
+		if (x%i==0)
+		{	n=n*i;
+			x=x/i;
+			y=y/i;
+		}
+			{if (y%i==0)
+			else i++;}
+		else
+			i++;
+		}
+	while (i<=x);
+n=n*x*y;
+cout<<"El MCM es:"<<n;
+getch ();
+	
+}
