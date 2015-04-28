@@ -1,0 +1,32 @@
+// FuncionFAC.cpp : Defines the entry point for the console application.
+//Erwin Ferreyra Montaño
+//28/04/2015
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+
+using namespace std;
+
+int funcionFAC(int n);
+
+void main()
+{
+	int fac, n;
+	cout<<"Ingrese un numero: ";
+	cin>>n;
+	fac= funcionFAC(n);
+	cout<<"El numero es: "<<fac;
+	getch ();	
+}
+
+//Subprograma
+int funcionFAC(int n)
+{
+		int s, i;
+		s=1;
+		for (int i=1;i<=n;i++)
+			s=s*i;
+		return s;
+}
