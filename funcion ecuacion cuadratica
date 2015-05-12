@@ -1,3 +1,5 @@
+// cuadratica.cpp : Defines the entry point for the console application.
+
 #include "stdafx.h"
 #include <iostream>
 #include "conio.h"
@@ -13,13 +15,13 @@ float unica(float a, float b);
 void main()
 {
 	float a,b,c,d,x, x1, x2;
-	cout<<"Ingrese A";
+	cout<<"Ingrese A:";
 	cin>>a;
-	cout<<"Ingrese B";
+	cout<<"Ingrese B:";
 	cin>>b;
-	cout<<"Ingrese C";
+	cout<<"Ingrese C:";
 	cin>>c;
-	d=determinante(a,b,d,x1,x2);
+	d=determinante(a,b,c,x1,x2);
 	if(d>0)
 	{
 		reales(a,b,d,x1,x2);
