@@ -1,0 +1,58 @@
+// Tecnoupsa.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h"
+
+using namespace std;
+
+void infoapp ();
+void infobasu ();
+void inforeci ();
+void ubitrash ();
+
+void main()
+{float ; int opcion;
+	do{
+		cout<<"MENU - Bienvenido a Mundo Verde \t\n";
+		cout<<"================================ \t\n";
+		cout<<"1.- Informacion sobre mundo verde \n";
+		cout<<"2.- Tipos de basura \n";
+		cout<<"3.- ¿Como reciclar? \n";
+		cout<<"4.- Ubicacion del camion de basura \n";
+		cout<<"0.- Salir\n";
+		cout<<"Elige una opcion\n";
+		cin>>opcion;
+		switch(opcion){
+		case 1: infoapp ();
+			break;
+		case 2: infobasu (); 
+			break;
+		case 3: inforeci ();
+			break;
+		case 4: 
+			break;
+		case 0: ;break;
+	default: cout<<"Opcion invalida\n";
+}
+getch ();
+system ("cls");
+}	
+	while (opcion!=0);
+getch ();
+}
+
+void infoapp ()
+	{ cout<<"INFORMACION SOBRE LA APP"<<endl;
+	}
+void infobasu ()
+	{ cout<<"INFORMACION SOBRE LA BASURA"<<endl;
+	}
+void inforeci ()
+	{ cout<<"INFORMACION SOBRE EL RECICLAJE"<<endl;
+	}
+void ubitrash ()
+{ cout<<"UBICACION GPS"<<endl;
+}
