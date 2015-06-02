@@ -1,0 +1,82 @@
+// MNC.cpp : Defines the entry point for the console application.
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define MAX 7
+
+using namespace std;
+
+void cargar(int vec[],int tam);
+void ordenar(int vec[],int tam);
+void mostrar(int vec[],int tam);
+void buscar(int vec[],int tam);
+
+void main()
+{int n, vec[MAX];
+do{
+	cout<< "Ingrese el numero de elementos del vector: ";
+	cin>> n;
+}
+while((n<=0)||(n>100));
+cargar(vec,n);
+ordenar(vec,n);
+mostrar(vec,n);
+buscar(vec,n);
+getch();
+}
+
+void cargar(int vec[],int tam)
+{
+for(int i=0;i<tam;i++)
+{
+cout<< "Ingrese el valor para vec["<< i << "]=";
+cin>> vec[i];
+}
+}
+
+void ordenar(int vec[],int tam)
+{int aux,m;
+for (int i=0;i<tam-1;i++)
+{
+for(int j=i+1;j<tam;j++)
+{
+if(vec[i]>vec[j]) // CAMBIANDO EL SIGNO CAMBIA A DESENDENTE
+{
+aux=vec[j];
+vec[j]=vec[i];
+vec[i]=aux;
+}
+}
+}
+}
+
+void mostrar(int vec[],int tam)
+{
+for(int i=0;i<tam;i++)
+	{
+		cout<< "vec["<< i << "]=";
+		cout<< vec[i]<<endl;
+	}
+}
+
+void buscar(int vec[],int tam)
+{int i;
+float valor;
+int alto,central,bajo;
+bajo=0;
+alto=tam-1;
+central=(bajo+alto)/2;
+cout<<"Ingrese el valor que quiere buscas:";
+cin>>valor;
+while((bajo<=alto)&&(vec[central]!=valor))
+  {
+	if(valor<vec[central]) alto=central-1;
+	else bajo=central+1;
+	central=(bajo+alto)/2;
+  }
+	if(valor==vec[central]) 
+		cout<<"El valor se encuentra en la posicion: "<<central;
+	else 
+		cout<<"El valor no se encuentra";
+}
